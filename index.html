@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link href="https://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css" rel="stylesheet">
+    
+    
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Video Assaignment</title>
+  </head>
+  <body>
+    
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light main-width sticky-top">
+      <div class="container container-full">
+        <a class="navbar-brand logo" href="#">
+          <img src="img/logo.png"  alt="#">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto our-primary-menu">
+            <li><a href="#" class="down-icon">Home<i class="far fa-chevron-down"></i></a>
+              <ul>
+                <li><a href="#">Home One</a></li>
+                <li><a href="#">Home Two</a></li>
+                <li><a href="#">Home Three</a></li>
+              </ul>
+            </li>
+            <li><a href="#" class="down-icon">Pages<i class="far fa-chevron-down"></i></a>
+              <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Teem</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Loan Calculator</a></li>
+                <li><a href="#">Apply Now</a></li>
+                <li><a href="#">Testimonial</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Sign in</a></li>
+                <li><a href="#">Sign Up</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Eror Page</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </li>
+            <li><a href="#" class="down-icon">Services<i class="far fa-chevron-down"></i></a>
+              <ul>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Services Details</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Funding</a></li>
+            <li><a href="#">Loan</a></li>
+            <li><a href="#" class="down-icon">News<i class="far fa-chevron-down"></i></a>
+              <ul>
+                <li><a href="#" class="down-icon">News</a></li>
+                <li><a href="#">News Details</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#"><i class="fas fa-search"></i></a></li>
+
+          </ul>
+          <span class="bar">|</span>
+          <div class="header-info d-flex">
+            
+            <div class="header-call mx-2 clearfix align-items-center">
+              <div class="header-call-icon float-start me-3 h-100">
+                <span><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMi4wNzYgNTEyLjA3NiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgY2xhc3M9IiI+PGcgdHJhbnNmb3JtPSJtYXRyaXgoMSwtMi40NDkyOTM1OTgyOTQ3MDY0ZS0xNiwyLjQ0OTI5MzU5ODI5NDcwNTRlLTE2LDEuMDAwMDAwMDAwMDAwMDAwMiwtMS4xMzY4NjgzNzcyMTYxNjAzZS0xMywxLjcwNTMwMjU2NTgyNDI0MDRlLTEzKSI+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEgLTEpIj4KCTxnPgoJCTxnPgoJCQk8cGF0aCBkPSJNNDk5LjYzOSwzOTYuMDM5bC0xMDMuNjQ2LTY5LjEyYy0xMy4xNTMtOC43MDEtMzAuNzg0LTUuODM4LTQwLjUwOCw2LjU3OWwtMzAuMTkxLDM4LjgxOCAgICAgYy0zLjg4LDUuMTE2LTEwLjkzMyw2LjYtMTYuNTQ2LDMuNDgybC01Ljc0My0zLjE2NmMtMTkuMDM4LTEwLjM3Ny00Mi43MjYtMjMuMjk2LTkwLjQ1My03MS4wNHMtNjAuNjcyLTcxLjQ1LTcxLjA0OS05MC40NTMgICAgIGwtMy4xNDktNS43NDNjLTMuMTYxLTUuNjEyLTEuNzA1LTEyLjY5NSwzLjQxMy0xNi42MDZsMzguNzkyLTMwLjE4MmMxMi40MTItOS43MjUsMTUuMjc5LTI3LjM1MSw2LjU4OC00MC41MDhsLTY5LjEyLTEwMy42NDYgICAgIEMxMDkuMTIsMS4wNTYsOTEuMjUtMi45NjYsNzcuNDYxLDUuMzIzTDM0LjEyLDMxLjM1OEMyMC41MDIsMzkuMzY0LDEwLjUxMSw1Mi4zMyw2LjI0Miw2Ny41MzkgICAgIGMtMTUuNjA3LDU2Ljg2Ni0zLjg2NiwxNTUuMDA4LDE0MC43MDYsMjk5LjU5N2MxMTUuMDA0LDExNC45OTUsMjAwLjYxOSwxNDUuOTIsMjU5LjQ2NSwxNDUuOTIgICAgIGMxMy41NDMsMC4wNTgsMjcuMDMzLTEuNzA0LDQwLjEwNy01LjIzOWMxNS4yMTItNC4yNjQsMjguMTgtMTQuMjU2LDM2LjE4MS0yNy44NzhsMjYuMDYxLTQzLjMxNSAgICAgQzUxNy4wNjMsNDIyLjgzMiw1MTMuMDQzLDQwNC45NTEsNDk5LjYzOSwzOTYuMDM5eiBNNDk0LjA1OCw0MjcuODY4bC0yNi4wMDEsNDMuMzQxYy01Ljc0NSw5LjgzMi0xNS4wNzIsMTcuMDYxLTI2LjAyNywyMC4xNzMgICAgIGMtNTIuNDk3LDE0LjQxMy0xNDQuMjEzLDIuNDc1LTI4My4wMDgtMTM2LjMyUzguMjksMTI0LjU1OSwyMi43MDMsNzIuMDU0YzMuMTE2LTEwLjk2OCwxMC4zNTQtMjAuMzA3LDIwLjE5OC0yNi4wNjEgICAgIGw0My4zNDEtMjYuMDAxYzUuOTgzLTMuNiwxMy43MzktMS44NTUsMTcuNjA0LDMuOTU5bDM3LjU0Nyw1Ni4zNzFsMzEuNTE0LDQ3LjI2NmMzLjc3NCw1LjcwNywyLjUzNCwxMy4zNTYtMi44NSwxNy41NzkgICAgIGwtMzguODAxLDMwLjE4MmMtMTEuODA4LDkuMDI5LTE1LjE4LDI1LjM2Ni03LjkxLDM4LjMzMmwzLjA4MSw1LjU5OGMxMC45MDYsMjAuMDAyLDI0LjQ2NSw0NC44ODUsNzMuOTY3LDk0LjM3OSAgICAgYzQ5LjUwMiw0OS40OTMsNzQuMzc3LDYzLjA1Myw5NC4zNyw3My45NThsNS42MDYsMy4wODljMTIuOTY1LDcuMjY5LDI5LjMwMywzLjg5OCwzOC4zMzItNy45MWwzMC4xODItMzguODAxICAgICBjNC4yMjQtNS4zODEsMTEuODctNi42MiwxNy41NzktMi44NWwxMDMuNjM3LDY5LjEyQzQ5NS45MTgsNDE0LjEyNiw0OTcuNjYzLDQyMS44ODYsNDk0LjA1OCw0MjcuODY4eiIgZmlsbD0iI2U3MjQyNCIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPgoJCQk8cGF0aCBkPSJNMjkxLjE2MSw4Ni4zOWM4MC4wODEsMC4wODksMTQ0Ljk3Nyw2NC45ODYsMTQ1LjA2NywxNDUuMDY3YzAsNC43MTMsMy44Miw4LjUzMyw4LjUzMyw4LjUzM3M4LjUzMy0zLjgyLDguNTMzLTguNTMzICAgICBjLTAuMDk5LTg5LjUwMy03Mi42My0xNjIuMDM1LTE2Mi4xMzMtMTYyLjEzM2MtNC43MTMsMC04LjUzMywzLjgyLTguNTMzLDguNTMzUzI4Ni40NDgsODYuMzksMjkxLjE2MSw4Ni4zOXoiIGZpbGw9IiNlNzI0MjQiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD4KCQkJPHBhdGggZD0iTTI5MS4xNjEsMTM3LjU5YzUxLjgxNiwwLjA2MSw5My44MDYsNDIuMDUxLDkzLjg2Nyw5My44NjdjMCw0LjcxMywzLjgyMSw4LjUzMyw4LjUzMyw4LjUzMyAgICAgYzQuNzEzLDAsOC41MzMtMy44Miw4LjUzMy04LjUzM2MtMC4wNzEtNjEuMjM4LTQ5LjY5Ni0xMTAuODYzLTExMC45MzMtMTEwLjkzM2MtNC43MTMsMC04LjUzMywzLjgyLTguNTMzLDguNTMzICAgICBTMjg2LjQ0OCwxMzcuNTksMjkxLjE2MSwxMzcuNTl6IiBmaWxsPSIjZTcyNDI0IiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+CgkJCTxwYXRoIGQ9Ik0yOTEuMTYxLDE4OC43OWMyMy41NTIsMC4wMjgsNDIuNjM4LDE5LjExNCw0Mi42NjcsNDIuNjY3YzAsNC43MTMsMy44MjEsOC41MzMsOC41MzMsOC41MzNzOC41MzMtMy44Miw4LjUzMy04LjUzMyAgICAgYy0wLjAzOC0zMi45NzQtMjYuNzU5LTU5LjY5Ni01OS43MzMtNTkuNzMzYy00LjcxMywwLTguNTMzLDMuODItOC41MzMsOC41MzNTMjg2LjQ0OCwxODguNzksMjkxLjE2MSwxODguNzl6IiBmaWxsPSIjZTcyNDI0IiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+CgkJPC9nPgoJPC9nPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjwvZz48L3N2Zz4=" /></span>
+              </div>
+              <div class="header-call-info">
+                <span>Call Now</span>
+                <a href="tel:+8801906537214">+8801906537214</a>
+              </div>
+            </div>
+            <div class="header-btn mt-1">
+              <a href="#" class="btn btn-danger px-4">Apply Now</a>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="slider-section">
+      <div class="container-full m-auto px-3">
+        <div class="row">
+          <div class="col-md-6 slider-content-wrap">
+            <div class="slider-content">
+              <h6 class="text-danger fw-normal">We are here for</h6>
+              <h1>We believe in those made to do more</h1>
+              <p>Loans are advantageous as a relatively inexpensive way of borrowing money. Start or grow your own business</p>
+              <div class="header-btn mt-1">
+                <a href="#" class="btn btn-danger px-5 py-2">View More</a>
+              </div>
+            </div>
+            <div class="header-social">
+              <ul>
+                <li><span>Follow us</span></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="logo-section py-5">
+      <div class="container">
+        <div class="col-md-12">
+          <div class="client-logo">
+            <ul class="d-flex justify-content-between">
+              <li><a href="#"><img src="img/img1.png" alt="#"></a></li>
+              <li><a href="#"><img src="img/img2.png" alt="#"></a></li>
+              <li><a href="#"><img src="img/img3.png" alt="#"></a></li>
+              <li><a href="#"><img src="img/img4.png" alt="#"></a></li>
+              <li><a href="#"><img src="img/img5.png" alt="#"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Flaticon -->
+    
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
